@@ -2,7 +2,7 @@ Part of our ECE150 Final Project, where we implemented C code with our Raspberry
 
 Using a State Machine, configuration file, log file, and a Watchdog, we were able to monitor the current status of a couple of lasers, and detect whether objects successfully pass through it, going 'in' or 'out'. 
 
-The file comes with a config.cfg, statsFile.cfg and a log.cfg. The config file will be the file in which the location of the log and stats file are and also the timeout duration for the Watchdog. 
+The project comes with a config.cfg, statsFile.cfg and a log.cfg. The config file will be the file controlled by the user in which the location of the log and stats file are inputted (or the path in the Pi) and also the timeout duration for the Watchdog. Note that the stats and log files should be created in the Pi itself.
 
 The stats file will output how many times each laser is broken, and number of objects which have entered or exited. It will be documented when the program halts (which will only occur forcibly). 
 
